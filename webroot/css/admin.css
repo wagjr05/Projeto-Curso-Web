@@ -1,0 +1,198 @@
+:root {
+    background: linear-gradient(rgb(103, 14, 163),rgba(52, 52, 158, 0.979));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* TOP-SIDE */
+header {
+    margin: 20px 50px;
+
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    justify-content: space-between;
+}
+
+.nav__header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav__header ul li {
+    margin-left: 20px;
+}
+
+.nav__header a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav__header a:hover {
+    border-bottom: 1px solid var(--green);
+}
+
+main {
+    margin: 100px 50px;
+}
+
+.containner {
+    border-radius: 10px;
+
+    background: var(--white);
+    color: var(--dark-color);
+    border-top: 5px solid var(--green);
+}
+
+.title__buttons {
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title__buttons small {
+    font-size: .6em;
+}
+
+.title__buttons a {
+    border-radius: 5px;
+    padding: 10px 15px;
+
+    color: var(--white);
+    background: var(--green);
+}
+
+table {
+    width: 100%;
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+table a {
+    color: var(--light);
+}
+
+table td, table th {
+    padding: 8px 20px;
+}
+
+table tbody tr {
+    color: var(--light);
+    opacity: .5;
+}
+
+table tr:hover {
+    opacity: 1;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    text-align: left;
+    color: var(--black);
+    background-color: var(--light);
+}
+
+/* PAGINATION */
+.pagination {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.pagination a {
+    margin: 20px 0;
+    padding: 8px 16px;
+
+    float: left;
+    text-decoration: none;
+    color: var(--dark-background);
+}
+
+.pagination a.active {
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.pagination a:hover:not(.active) {
+    background: rgba(0, 128, 0, .4);
+}
+
+form {
+    padding: 30px;
+    width: 100%;
+}
+
+form label {
+    margin: 5px;
+}
+
+form input {
+    border: none;
+    outline: none;
+
+    width: 50%;
+    margin-top: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--green);
+}
+
+.button__add, .button__edit {
+    padding: 8px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.button__add {
+    background: var(--green);
+}
+
+.button__edit {
+    background: var(--orange);
+}
+
+/* GLOBAL */
+.message__error {
+    padding: 10px;
+    margin-bottom: 30px;
+
+    text-align: center;
+    color: var(--white);
+    background: rgba(255, 0, 0, .6);
+}
+
+.message__success {
+    padding: 10px;
+    margin-bottom: 30px;
+
+    text-align: center;
+    color: var(--white);
+    background: rgba(0, 128, 0, .6);
+}
+
+.error-message {
+    margin: -15px 0 10px 5px;
+    color: var(--red);
+}
+
+a {
+    text-decoration: none;
+}

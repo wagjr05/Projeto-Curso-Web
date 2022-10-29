@@ -1,0 +1,116 @@
+:root {
+    background: linear-gradient(rgb(103, 14, 163),rgba(52, 52, 158, 0.979));
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(var(--black), var(--blue));
+}
+
+main {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 10px 0;
+    position: fixed;
+    text-align: center;
+}
+
+/* ALLOWS */
+.allows {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--white);
+    border-top: 5px solid var(--green);
+}
+
+.allows h1 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.allows form {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.allows form label {
+    margin: 5px;
+}
+
+.allows form input {
+    border: none;
+    outline: none;
+
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--green);
+}
+
+.allows form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 15px;
+    border-radius: 5px;
+
+
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    background: var(--green);
+}
+
+/* GLOBAL */
+.message__error {
+    padding: 10px;
+    margin-bottom: 30px;
+
+    text-align: center;
+    color: var(--white);
+    background: rgba(255, 0, 0, .6);
+}
+
+.message__success {
+    padding: 10px;
+    margin-bottom: 30px;
+
+    text-align: center;
+    color: var(--white);
+    background: rgba(0, 128, 0, .6);
+}
+
+.error-message {
+    margin: -15px 0 10px 5px;
+    color: var(--red);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover {
+    color: var(--green);
+}

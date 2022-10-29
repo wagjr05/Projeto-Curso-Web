@@ -1,0 +1,980 @@
+2022-10-28 23:24:48 Debug: duration=1 rows=1 SHOW TABLES FROM `extension`
+2022-10-28 23:24:53 Debug: duration=1 rows=1 SHOW TABLES FROM `extension`
+2022-10-28 23:24:53 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `users`
+2022-10-28 23:24:53 Debug: duration=0 rows=4 SHOW INDEXES FROM `users`
+2022-10-28 23:24:53 Debug: duration=5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-28 23:24:53 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-28 23:24:54 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `users`
+2022-10-28 23:24:54 Debug: duration=0 rows=4 SHOW INDEXES FROM `users`
+2022-10-28 23:24:54 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-28 23:24:54 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 01:15:51 Debug: duration=14 rows=8 SHOW FULL COLUMNS FROM `users`
+2022-10-29 01:15:51 Debug: duration=0 rows=4 SHOW INDEXES FROM `users`
+2022-10-29 01:15:51 Debug: duration=8 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 01:15:51 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 01:18:16 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 01:18:16 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 01:18:16 Debug: duration=10 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 01:18:16 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 01:20:31 Debug: duration=3 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 01:20:31 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 01:20:31 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 01:20:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 01:24:35 Debug: duration=3 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 01:24:35 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 01:24:35 Debug: duration=4 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 01:24:35 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 01:24:35 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.email = 'yuriaguiar.nascimentof@gmail.com' LIMIT 1
+2022-10-29 01:24:35 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.username = 'yuri.aguiar' LIMIT 1
+2022-10-29 01:24:36 Debug: duration=0 rows=0 BEGIN
+2022-10-29 01:24:36 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.email = 'yuriaguiar.nascimentof@gmail.com' LIMIT 1
+2022-10-29 01:24:36 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.username = 'yuri.aguiar' LIMIT 1
+2022-10-29 01:24:36 Debug: duration=1 rows=1 INSERT INTO users (email, username, password, name, created, modified) VALUES ('yuriaguiar.nascimentof@gmail.com', 'yuri.aguiar', '$2y$10$5BQqbRNAePHx05JjR5oPwOZOf9Ej7npd1HrC.m/C1C2/cUxcRgPHO', 'Yuri Aguiar', '2022-10-29 01:24:36', '2022-10-29 01:24:36')
+2022-10-29 01:24:36 Debug: duration=0 rows=0 COMMIT
+2022-10-29 01:24:51 Debug: duration=3 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users WHERE Users.username = 'yuri.aguiar'
+2022-10-29 01:26:05 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.email = 'lucasmm56@gmail.com' LIMIT 1
+2022-10-29 01:26:05 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.username = 'lucas.mm' LIMIT 1
+2022-10-29 01:26:05 Debug: duration=0 rows=0 BEGIN
+2022-10-29 01:26:05 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.email = 'lucasmm56@gmail.com' LIMIT 1
+2022-10-29 01:26:05 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.username = 'lucas.mm' LIMIT 1
+2022-10-29 01:26:05 Debug: duration=1 rows=1 INSERT INTO users (email, username, password, name, created, modified) VALUES ('lucasmm56@gmail.com', 'lucas.mm', '$2y$10$RmI7Cs6fzwDGCSNEco6Txu6QFX6hlOThEObkqCgCxODz7p1xv/KPa', 'Lucas Martins', '2022-10-29 01:26:05', '2022-10-29 01:26:05')
+2022-10-29 01:26:05 Debug: duration=0 rows=0 COMMIT
+2022-10-29 01:27:04 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 01:27:04 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 01:27:04 Debug: duration=6 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 01:27:04 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 01:29:05 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 01:29:05 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 01:29:05 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 01:29:05 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 01:29:05 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.username AS `Users__username`, Users.password AS `Users__password` FROM users Users WHERE Users.username = 'yuri.aguiar' LIMIT 1
+2022-10-29 01:31:18 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 01:31:18 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 01:31:18 Debug: duration=7 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 01:31:18 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 01:31:18 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 01:31:18 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:09:51 Debug: duration=7 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:09:51 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:09:51 Debug: duration=4 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:09:51 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:09:51 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.username AS `Users__username`, Users.password AS `Users__password` FROM users Users WHERE Users.username = 'yuri.aguiar' LIMIT 1
+2022-10-29 02:09:51 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:09:51 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:12:34 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:12:34 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:12:34 Debug: duration=7 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:12:34 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:12:34 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:12:34 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:13:49 Debug: duration=2 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:13:49 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:14:28 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:14:28 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:14:29 Debug: duration=3 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:14:29 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:14:32 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:14:32 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:14:44 Debug: duration=6 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:14:44 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:14:44 Debug: duration=7 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:14:44 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:14:44 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:14:44 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:15:51 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:15:51 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:15:51 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:15:56 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:15:56 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:15:56 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:16:01 Debug: duration=3 rows=1 SELECT Users.id AS `Users__id`, Users.username AS `Users__username`, Users.password AS `Users__password` FROM users Users WHERE Users.username = 'yuri.aguiar' LIMIT 1
+2022-10-29 02:16:01 Debug: duration=2 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:16:01 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:16:01 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:17:05 Debug: duration=5 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:17:05 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:17:06 Debug: duration=5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:17:06 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:17:06 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:17:06 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:17:24 Debug: duration=2 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:17:24 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:17:36 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:17:36 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:17:36 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:17:59 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:17:59 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:17:59 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:18:40 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:18:40 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:18:40 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:19:21 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:19:21 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:19:21 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:19:21 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:19:21 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:19:21 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:19:21 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:19:23 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:19:23 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:19:23 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:22:07 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:22:07 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:22:07 Debug: duration=6 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:22:07 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:22:07 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:22:07 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:22:35 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:22:35 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:22:45 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:22:45 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:22:45 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:22:53 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:22:53 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:22:53 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:25:13 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:25:13 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:25:13 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:25:13 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:25:13 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:25:13 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:25:13 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:25:30 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:25:30 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:25:30 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:26:21 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:26:21 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:26:21 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:26:37 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:26:37 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:26:37 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:27:04 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:27:04 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:27:04 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:27:37 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:27:37 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:27:37 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:27:37 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:27:37 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:27:37 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:27:37 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:27:46 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:27:46 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:27:46 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:28:53 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:28:53 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:28:53 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:29:10 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:29:10 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:29:10 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:29:30 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:29:30 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:29:30 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:29:40 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:29:40 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:29:40 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:29:40 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:29:40 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:29:40 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:29:40 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:30:10 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:30:10 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:30:10 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:30:18 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:30:18 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:30:18 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:30:48 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:30:48 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:30:48 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:31:07 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:31:07 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:31:07 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:31:14 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:31:14 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:31:14 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:32:02 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:32:02 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:32:02 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:32:02 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:32:02 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:32:02 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:32:02 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:33:00 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:33:00 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:33:00 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:34:08 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:34:08 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:34:08 Debug: duration=7 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:34:08 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:34:08 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:34:08 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:34:08 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:34:17 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:34:17 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:34:17 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:34:18 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:34:18 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:34:24 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:34:24 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:34:24 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:34:31 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.username AS `Users__username`, Users.password AS `Users__password` FROM users Users WHERE Users.username = 'yuri.aguiar' LIMIT 1
+2022-10-29 02:34:31 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:34:31 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:34:31 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:36:26 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:36:26 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:36:26 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:36:26 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:36:26 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:36:26 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:36:26 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:37:31 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:37:31 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:37:31 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:37:46 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:37:46 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:37:46 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:39:34 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:39:34 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:39:34 Debug: duration=13 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:39:34 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:39:34 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:39:34 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:39:34 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:40:42 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:40:42 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:40:42 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:41:38 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:41:38 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:41:38 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:41:38 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:41:38 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:41:38 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:41:38 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:42:20 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:42:20 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:42:20 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:42:47 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:42:47 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:42:47 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:43:45 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:43:45 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:43:45 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:43:45 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:43:45 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:43:45 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:43:45 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:44:11 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:44:11 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:44:11 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:44:47 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:44:47 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:44:47 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:45:18 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:45:18 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:45:18 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:45:58 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:45:58 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:45:58 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:45:58 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:45:58 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:45:58 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:45:58 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:46:58 Debug: duration=6 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:46:58 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:46:58 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:47:18 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:47:18 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:47:18 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:47:31 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:47:31 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:47:31 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:47:49 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:47:49 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:47:49 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:48:39 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:48:39 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:48:39 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:48:39 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:48:39 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:48:39 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:48:39 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:48:47 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:48:47 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:48:47 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:48:58 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:48:58 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:48:58 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:49:03 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:49:03 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:49:03 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:49:14 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:49:14 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:49:14 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:49:42 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:49:42 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:49:42 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:49:49 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:49:49 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:49:49 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:50:17 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:50:17 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:50:17 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:50:18 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id desc LIMIT 10 OFFSET 0
+2022-10-29 02:50:18 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:50:18 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:50:19 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:50:19 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:50:19 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:50:51 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:50:51 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:50:51 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:50:51 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:50:51 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:50:51 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:50:51 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:51:04 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:51:04 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:51:04 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:51:50 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:51:50 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:51:50 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:52:01 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:52:01 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:52:01 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:52:41 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:52:41 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:52:41 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:53:06 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:53:06 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:53:06 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:53:06 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:53:06 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:53:06 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:53:06 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:53:31 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:53:31 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:53:31 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:56:09 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 02:56:09 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 02:56:09 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 02:56:09 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 02:56:09 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:56:09 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:56:09 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:56:18 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:56:18 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:56:18 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:56:46 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:56:46 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:56:46 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:56:58 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:56:58 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:56:58 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:57:11 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:57:11 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:57:11 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:57:35 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:57:35 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:57:35 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:57:54 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users ORDER BY Users.id asc LIMIT 10 OFFSET 0
+2022-10-29 02:57:54 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:57:54 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:58:04 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 02:58:06 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 02:58:06 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 02:58:06 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:00:17 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:00:17 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:00:17 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:00:17 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:00:17 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:00:17 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:00:17 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:00:48 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:00:48 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:00:48 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:00:59 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:00:59 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:00:59 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:01:07 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:01:07 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:01:07 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:01:35 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:01:35 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:01:35 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:02:14 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:02:14 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:02:14 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:02:30 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:02:30 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:02:30 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:02:30 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:02:30 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:02:30 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:02:30 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:13:12 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:13:12 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:13:12 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:13:12 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:13:12 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:13:12 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:13:12 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:15:28 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:15:28 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:15:28 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:15:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:15:28 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:15:28 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:15:28 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:15:52 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:15:52 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:15:52 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:16:33 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:16:33 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:16:33 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:17:18 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:17:18 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:17:18 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:17:26 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:17:26 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:17:26 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:17:32 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:17:32 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:17:32 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:17:32 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:17:32 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:17:32 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:17:32 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:17:46 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:17:46 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:17:46 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:18:09 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:18:09 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:18:09 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:18:19 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:18:19 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:18:19 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:18:52 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:18:52 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:18:52 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:19:28 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:19:28 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:19:28 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:19:56 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:19:56 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:19:56 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:19:56 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:19:56 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:19:56 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:19:56 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:20:08 Debug: duration=2 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:20:08 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:20:08 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:21:22 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:21:22 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:21:22 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:28:15 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:28:15 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:28:15 Debug: duration=9 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:28:15 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:28:15 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:28:15 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:28:15 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:28:33 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:28:33 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:28:33 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:28:35 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:28:35 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:28:35 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:29:25 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:29:25 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:29:25 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:29:37 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:29:37 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:29:37 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:30:09 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:30:09 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:30:09 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:33:02 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:33:02 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:33:02 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:33:02 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:33:02 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:33:02 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:33:02 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:33:54 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:33:54 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:33:54 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:34:10 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:34:10 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:34:10 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:34:12 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:34:12 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:34:12 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:36:50 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:36:50 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:36:50 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:36:50 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:36:50 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:36:50 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:36:50 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:38:05 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:38:05 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:38:05 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:38:29 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:38:29 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:38:29 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:38:57 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:38:57 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:38:57 Debug: duration=9 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:38:57 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:38:57 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:38:57 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:38:57 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:39:06 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:39:06 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:39:06 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:39:20 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:39:20 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:39:20 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:40:21 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:40:21 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:40:21 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:40:31 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:40:31 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:40:31 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:40:54 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:40:54 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:40:54 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:41:00 Debug: duration=2 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:41:00 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:41:00 Debug: duration=10 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:41:00 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:41:00 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:41:00 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:41:00 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:41:32 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:41:32 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:41:32 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:41:46 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:41:46 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:41:46 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:41:57 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:41:57 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:41:57 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:42:11 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:42:11 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:42:11 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:42:35 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 1 OFFSET 0
+2022-10-29 03:42:35 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:42:35 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:42:58 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:42:58 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:42:58 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:48:17 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:48:17 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:48:17 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:48:17 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:48:17 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.username AS `Users__username`, Users.password AS `Users__password` FROM users Users WHERE Users.username = 'yuri.aguiar' LIMIT 1
+2022-10-29 03:48:17 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:48:17 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:48:17 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:48:42 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:48:42 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:48:42 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:48:53 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:48:53 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:48:53 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:50:41 Debug: duration=3 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:50:41 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:50:41 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:50:41 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:50:41 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:50:41 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:50:41 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:50:53 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:50:53 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:50:53 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:53:18 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:53:18 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:53:18 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:53:18 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:53:18 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.username AS `Users__username`, Users.password AS `Users__password` FROM users Users WHERE Users.username = 'yuri.aguiar' LIMIT 1
+2022-10-29 03:53:19 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:53:19 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:53:19 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:53:55 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:59:31 Debug: duration=3 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 03:59:31 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 03:59:31 Debug: duration=5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 03:59:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 03:59:55 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.username AS `Users__username`, Users.password AS `Users__password` FROM users Users WHERE Users.username = 'yuri.aguiar' LIMIT 1
+2022-10-29 03:59:55 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 03:59:55 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 03:59:55 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 03:59:58 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:00:36 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:02:42 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 04:02:42 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 04:02:42 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 04:02:42 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 04:02:42 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:02:50 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:03:02 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:03:55 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:04:12 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:04:41 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:05:04 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 04:05:04 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 04:05:04 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 04:05:04 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 04:05:04 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:05:20 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:05:55 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:06:42 Debug: duration=2 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:06:52 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:07:03 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:07:26 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 04:07:26 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 04:07:26 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 04:07:26 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 04:07:26 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:07:48 Debug: duration=6 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:08:11 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 04:08:11 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 04:08:11 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:08:12 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:09:20 Debug: duration=0 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 04:09:20 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 04:09:20 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:09:22 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:09:22 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:10:34 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 04:10:34 Debug: duration=0 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 04:10:34 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 04:10:34 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 04:10:34 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:10:34 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:10:47 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:10:47 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:11:02 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:11:02 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:11:22 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 04:11:22 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 04:11:22 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:11:27 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:11:27 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:13:42 Debug: duration=1 rows=7 SHOW FULL COLUMNS FROM `users`
+2022-10-29 04:13:42 Debug: duration=1 rows=3 SHOW INDEXES FROM `users`
+2022-10-29 04:13:42 Debug: duration=5 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'extension' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2022-10-29 04:13:42 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2022-10-29 04:13:42 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:13:42 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:13:46 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 04:13:46 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 04:13:46 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:13:48 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:13:48 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:13:52 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 04:13:52 Debug: duration=1 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 04:13:52 Debug: duration=0 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:13:54 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:13:54 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
+2022-10-29 04:13:56 Debug: duration=1 rows=2 SELECT Users.id AS `Users__id`, Users.email AS `Users__email`, Users.username AS `Users__username`, Users.password AS `Users__password`, Users.name AS `Users__name`, Users.created AS `Users__created`, Users.modified AS `Users__modified` FROM users Users LIMIT 10 OFFSET 0
+2022-10-29 04:13:56 Debug: duration=0 rows=1 SELECT (COUNT(*)) AS `count` FROM users Users
+2022-10-29 04:13:56 Debug: duration=1 rows=1 SELECT Users.id AS `Users__id`, Users.name AS `Users__name`, Users.email AS `Users__email` FROM users Users WHERE Users.id = 1 LIMIT 1
